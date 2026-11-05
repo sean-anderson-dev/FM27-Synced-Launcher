@@ -64,7 +64,7 @@ If you move the scripts later, run the shortcut script again.
 
 **Local backups** are kept in `%USERPROFILE%\Saved Games\FM27 Cloud Saves`, named like:
 
-20261104-210512 - post - DESKTOP-ABC123 - Hammer Time - Newcastle.fm
+20261104-210512 - post - DESKTOP-ABC123 - My Save.fm
 
 - `pre` is the save as it was before a session.
 - `post` is the save as it was right after a session, before OneDrive touched it.
