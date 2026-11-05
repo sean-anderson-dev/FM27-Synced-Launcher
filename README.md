@@ -6,14 +6,14 @@ Play the same Football Manager 27 save on more than one PC (e.g. a desktop and a
 
 Steam Cloud saves for FM are unreliable for multi-device play:
 
-- Steam Cloud renowned for erros and issues (hence my quick solution to never having my save available on my laptop)
+- Steam Cloud known for erros and issues (hence my quick solution to never having my save available on my laptop)
 - Only saves made with **Save Game As → Cloud** are synced. Normal saves aren't synced.
 - Syncing only happens when you exit, and failures are easy to miss.
 - Large saves have hit size limits on cloud sync after a few seasons normally, which stops you saving at all.
 
 Syncing your normal save folder with OneDrive has a different problem. OneDrive starts uploading a save while FM is still writing it, which leads to corrupted saves and conflict copies.
 
-This launcher fixes that by pausing OneDrive while FM is running, so the save is only uploaded once it's finished. It also takes local backups before and after every session just in case but I haven't needed them yet.
+This launcher fixes that by pausing OneDrive while FM is running, so the save is only uploaded once it's finished. It also takes local backups before and after every session just in case.
 
 ## What it does
 
@@ -44,7 +44,7 @@ Do this on each PC:
 2. Put both scripts in the same permanent folder. Inside OneDrive works well, e.g. `Documents\scripts\`, because it then syncs to your other PCs.
 3. Open PowerShell in that folder and run:
 
-   New-FM27Shortcut.ps1
+   `New-FM27Shortcut.ps1`
 
    This creates an **FM27 (Synced)** desktop shortcut with the FM27 icon.
    
@@ -54,7 +54,7 @@ If you move the scripts later, run the shortcut script again.
 
 ## Rules
 
-- **Always launch from the FM27 (Synced) shortcut**, never directly from Steam or old shortcut.
+- **Always launch from the FM27 (Synced) shortcut**, never directly from Steam or an old shortcut.
 - **Never have FM open on two PCs at once.**
 - **Leave the PowerShell window open while you play.** It restarts OneDrive when you quit. If it gets closed, OneDrive stays off until you start it or reboot.
 - **After quitting, wait for "Upload complete"** before playing on another PC. If the window can't confirm the upload, it offers to open your saves folder so you can check for the green tick yourself.
